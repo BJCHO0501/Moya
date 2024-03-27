@@ -16,8 +16,8 @@ let package = Package(
     name: "Moya",
     platforms: [
         .macOS(.v10_12),
-        .iOS(.v12),
-        .tvOS(.v12),
+        .iOS(.v11),
+        .tvOS(.v11),
         .watchOS(.v3)
     ],
     products: [
@@ -27,7 +27,7 @@ let package = Package(
         .library(name: "RxMoya", targets: ["RxMoya"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/BJCHO0501/Alamofire.git", .branch("master")),
         .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", .upToNextMajor(from: "6.0.0")),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0")),
         .package(url: "https://github.com/Quick/Quick.git", .upToNextMajor(from: "4.0.0")), // dev
